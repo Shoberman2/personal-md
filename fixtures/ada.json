@@ -1,0 +1,159 @@
+{
+  "login": "ada",
+  "repos": [
+    {
+      "name": "garden-web",
+      "description": "A small Next site",
+      "language": "TypeScript",
+      "languages": { "TypeScript": 9000, "CSS": 800 },
+      "pushedAt": "2026-04-01T00:00:00Z",
+      "paths": [
+        "README.md",
+        "package.json",
+        "package-lock.json",
+        "tsconfig.json",
+        ".prettierrc.json",
+        "eslint.config.js",
+        "vercel.json",
+        "app/page.tsx",
+        "app/layout.tsx",
+        "app/globals.css",
+        "LICENSE",
+        "CONTRIBUTING.md",
+        ".github/workflows/ci.yml"
+      ],
+      "files": {
+        "README.md": "# Garden\n\nYou can grow a small site. Your notes stay in the repo.\n\n## Quickstart\n\nnpm install\nnpm run dev\n",
+        "package.json": "{\n  \"name\": \"garden-web\",\n  \"license\": \"MIT\",\n  \"type\": \"module\",\n  \"dependencies\": {\n    \"next\": \"14.2.5\",\n    \"react\": \"18.3.1\",\n    \"react-dom\": \"18.3.1\",\n    \"tailwindcss\": \"3.4.10\"\n  },\n  \"devDependencies\": {\n    \"typescript\": \"5.5.4\",\n    \"eslint\": \"9.9.0\",\n    \"prettier\": \"3.3.3\"\n  }\n}\n",
+        "tsconfig.json": "{\n  \"compilerOptions\": {\n    \"strict\": true\n  }\n}\n",
+        ".prettierrc.json": "{\n  \"singleQuote\": true,\n  \"semi\": false\n}\n",
+        "eslint.config.js": "export default [];\n",
+        "vercel.json": "{\n  \"framework\": \"nextjs\"\n}\n",
+        "app/globals.css": ":root { color: #1a1a1a; background: #f7f3ea; }\nbody { font-family: Georgia, serif; }\n.accent { color: #ff00ff; }\n",
+        "LICENSE": "MIT License\n\nPermission is hereby granted, free of charge, to any person obtaining a copy.\n"
+      },
+      "commits": [
+        "feat: add home page",
+        "fix: tighten typecheck",
+        "chore: readme",
+        "feat: hero section"
+      ]
+    },
+    {
+      "name": "paper-page",
+      "description": "A reading page",
+      "language": "TypeScript",
+      "languages": { "TypeScript": 7000, "CSS": 600 },
+      "pushedAt": "2026-03-01T00:00:00Z",
+      "paths": [
+        "README.md",
+        "package.json",
+        "package-lock.json",
+        "tsconfig.json",
+        ".prettierrc.json",
+        "eslint.config.js",
+        "app/page.tsx",
+        "app/globals.css",
+        "LICENSE"
+      ],
+      "files": {
+        "README.md": "# Paper\n\nYou read this page. Your next step is the quickstart. No dashboard.\n\n## Quickstart\n\nnpm install\n",
+        "package.json": "{\n  \"name\": \"paper-page\",\n  \"license\": \"MIT\",\n  \"type\": \"module\",\n  \"dependencies\": {\n    \"next\": \"14.2.5\",\n    \"react\": \"18.3.1\",\n    \"react-dom\": \"18.3.1\",\n    \"tailwindcss\": \"3.4.10\"\n  },\n  \"devDependencies\": {\n    \"typescript\": \"5.5.4\",\n    \"eslint\": \"9.9.0\",\n    \"prettier\": \"3.3.3\"\n  }\n}\n",
+        "tsconfig.json": "{\n  \"compilerOptions\": {\n    \"strict\": true\n  }\n}\n",
+        ".prettierrc.json": "{\n  \"singleQuote\": true,\n  \"semi\": false\n}\n",
+        "eslint.config.js": "export default [];\n",
+        "app/globals.css": "body { color: #1a1a1a; background: #f7f3ea; font-family: Georgia, serif; }\n",
+        "LICENSE": "MIT License\n\nPermission is hereby granted.\n"
+      },
+      "commits": [
+        "feat: add essay layout",
+        "fix: contrast",
+        "chore: deps",
+        "Update copy"
+      ]
+    },
+    {
+      "name": "notes-cli",
+      "description": "Terminal notes",
+      "language": "TypeScript",
+      "languages": { "TypeScript": 4000 },
+      "pushedAt": "2026-02-01T00:00:00Z",
+      "paths": [
+        "README.md",
+        "package.json",
+        "package-lock.json",
+        "tsconfig.json",
+        "LICENSE",
+        "CLAUDE.md",
+        "src/cli.ts",
+        "src/format.ts",
+        "test/cli.test.ts",
+        "CONTRIBUTING.md",
+        "install.sh",
+        ".github/workflows/ci.yml",
+        "config/super-secret.env"
+      ],
+      "files": {
+        "README.md": "# Notes\n\nYou run this from the terminal. Your notes never need a dashboard. No SaaS.\n\n## Quickstart\n\nnpm install\n\ntoken ghp_abcdefghijklmnopqrstuvwxyz0123456789\n",
+        "package.json": "{\n  \"name\": \"notes-cli\",\n  \"license\": \"MIT\",\n  \"type\": \"module\",\n  \"bin\": { \"notes\": \"./dist/cli.js\" },\n  \"dependencies\": { \"citty\": \"0.1.6\" },\n  \"devDependencies\": { \"typescript\": \"5.5.4\", \"vitest\": \"2.0.5\" }\n}\n",
+        "tsconfig.json": "{\n  \"compilerOptions\": {\n    \"strict\": true\n  }\n}\n",
+        "LICENSE": "MIT License\n\nPermission is hereby granted.\n",
+        "CLAUDE.md": "# Notes\n\nKeep the CLI small.\n",
+        "config/super-secret.env": "API_TOKEN=ghp_thisShouldNeverBeRead0123456789\n"
+      },
+      "commits": [
+        "feat: add capture command",
+        "fix: empty input",
+        "chore: license",
+        "test: cover format"
+      ]
+    },
+    {
+      "name": "plot-tools",
+      "description": "Local plotting helpers",
+      "language": "Python",
+      "languages": { "Python": 5000 },
+      "pushedAt": "2026-01-01T00:00:00Z",
+      "paths": [
+        "README.md",
+        "pyproject.toml",
+        "LICENSE",
+        "src/plot_tools/main.py",
+        "tests/test_main.py"
+      ],
+      "files": {
+        "README.md": "# Plot\n\nYou plot local data. Your files stay on disk. Privacy-conscious tools only.\n\n## Getting started\n\npip install -e .\n",
+        "pyproject.toml": "[project]\nname = \"plot-tools\"\n\n[tool.ruff]\nline-length = 100\n",
+        "LICENSE": "MIT License\n\nPermission is hereby granted.\n"
+      },
+      "commits": [
+        "feat: add line chart",
+        "fix: empty series",
+        "chore: ruff",
+        "docs: quickstart"
+      ]
+    },
+    {
+      "name": "secret-client",
+      "private": true,
+      "description": "Acme Corp internal portal",
+      "language": "Go",
+      "languages": { "Go": 999999 },
+      "files": {
+        "README.md": "Acme Corp secret roadmap\n"
+      },
+      "commits": ["feat: acme launch"]
+    },
+    {
+      "name": "forked-rust",
+      "fork": true,
+      "description": "A fork that should not count",
+      "language": "Rust",
+      "languages": { "Rust": 50000 },
+      "files": {
+        "README.md": "# Fork\n\n## Quickstart\n\nYou should not see rust.\n"
+      },
+      "commits": ["feat: ignore me", "fix: ignore me", "chore: ignore me"]
+    }
+  ]
+}
