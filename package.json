@@ -1,0 +1,34 @@
+{
+  "name": "personal-md",
+  "version": "0.1.0",
+  "description": "A living personal.md of a builder's taste and defaults, mined from GitHub and updated by agents.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "personal-md": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "SPEC.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shoberman2/personal-md.git"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.test.json --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "personal-md": "tsx src/cli.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
